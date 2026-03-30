@@ -1,0 +1,128 @@
+/*html{
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}*/
+
+body{
+    background-color: rgb(199, 199, 199);
+    margin: 0;
+}
+
+#layout{
+    margin-left: auto;
+    margin-right: auto;
+    width:704px;
+}
+
+header{
+    top: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 90px;
+    background-color: #ffffff;
+    z-index: 999;
+}
+
+h1{
+    margin: 0px;
+    background-color: rgb(206, 72, 72);
+    color: #ffffff;
+    width:max-content;
+    height:max-content;
+    padding: 5px;
+    border-radius: 10px 30px 10px 30px;
+}
+
+#youtube_submitform{
+    width:100%;
+}
+
+#InputtedCode,
+#InputtedUrl,
+#InputtedShareUrl{
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    width: 70%;
+    height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+#player{
+    /*width: 640px;
+    height:360px;*/
+    width: 704px;
+    height: 396px;
+    padding: 0px;
+    margin: 0px;
+}
+input,
+.button,
+button{
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    padding: 15px;
+    margin:10px;
+    font-size: 15px;
+}
+
+
+#seekedTime,
+#A2,
+#B2,
+#A,
+#B{
+    height: 20px;
+    font-size: 15px;
+}
+
+#dispABLoop2{
+    font-size: 20px;
+}
+
+#youtube_controller{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: auto;
+}
+
+#video{
+    width: 704px;
+    height: 396px;
+}
+
+#controller{
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+#datatable,
+#datatable2,
+.can-scroll {
+
+    background-color: rgb(213, 181, 118);
+    color: beige;
+
+    /*left: 980px;*/
+    overflow: auto;
+}
+
+/* テーブルの親要素を非表示にするスタイル */
+#tableContainer,
+#tableContainer2 {
+    background-color: rgb(213, 181, 118);
+    max-height: 300px;
+    color: beige;
+    display: none;
+    overflow: auto;
+}

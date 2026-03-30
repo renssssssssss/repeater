@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>【切り抜き代用ツール】Youtube Repeater|区間リピート（ABリピート）/shorts/インライン再生/チャプター再生対応【PC・iOS・android対応！】</title>
+<meta name="description" content="youtube動画や端末内の動画をABリピートできます。YouTubeの動画の場合はURLまたは埋め込みコードを張り付けてください。">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="styletest.css">
+
+</head>
+<body>
+	<header class="top"><h1>Youtube Repeater</h1>
+		関連ページ:<a href="makeChapter.html">makeChapter</a> <a href="index.html">youtuberepeaterr</a>
+		 <a href="help.html">このページの使い方はこちら</a>(作成中)
+	</header>
+	
+	<div id="layout">
+        <main>
+		こちらは、端末内の動画の再生に使用できます。
+			<video id="video" controls="true" poster="videoposter.png" webkit-playinline playsinline></video>
+			<div id="tableContainer" display="block">
+			<table id="dataTable">
+				<thead class="y">
+				</thead>
+				<tbody class="can-scroll">
+					<!-- CSVファイルの内容挿入 -->
+				</tbody>
+			</table>
+			</div>
+		<br>
+		<div id="submit_form">
+		Video<input type="file" poster="noimage.png" id="video-file-input" accept="video/*">
+		<br>
+		Chapter<input type="file" id="ChapterFile" accept=".csv">
+		</div>
+		<div id="controller">
+
+		<input type="button" class="button" value="再生" onClick="playVideo()">
+		<input type="button" class="button" value="一時停止" onClick="pauseVideo()">
+		<input type="button" class="button" value="↑" onClick="upVolume()">
+		<input type="button" class="button" value="↓" onClick="downVolume()">
+		<input type="button" class="button" value="loop" onClick="toggleLoop()"><br>
+		<input type="button" class="button" value="submit A&B" onClick="submitAB()">
+		<input type="button" class="button" value="toggleABloop" onClick="toggleABloop()">
+		<input type="button" class="button" value="getCurrentTime" onClick="getCurrentTime()"><br>
+		<input type="button" class="button" value="setA" onClick="setCurrentTimeToA()">
+		<input type="button" class="button" value="setB" onClick="setCurrentTimeToB()">
+		<input type="button" class="button" value="チャプター表示/非表示" onClick="toggleTable()">
+		<br>
+		A
+		<br>
+		<input type="text" placeholder="ループのスタート時間を入力してください" id="A"><br>
+		<button id="mminus_a_hour" onClick="mclickMAH()">-1h</button><button id="mminus_a_minute" onClick="mclickMAM()">-10m</button><button id="mminus_a_second" onClick="mclickMAS()">-10s</button>
+		<button id="mplus_a_second" onClick="mclickPAS()">+10s</button><button id="mplus_a_minute" onClick="mclickPAM()">+10m</button><button id="mplus_a_hour" onClick="mclickPAH()">+1h</button>
+		<br>
+		B
+		<br>
+		<input type="text" placeholder="ループの終了時間を入力してください" id="B"><br>
+		<button id="mminus_b_hour" onClick="mclickMBH()">-1h</button><button id="mminus_b_minute" onClick="mclickMBM()">-10m</button><button id="mminus_b_second" onClick="mclickMBS()">-10s</button>
+		<button id="mplus_b_second" onClick="mclickPBS()">+10s</button><button id="mplus_b_minute" onClick="mclickPBM()">+10m</button><button id="mplus_b_hour" onClick="mclickPBH()">+1h</button>
+		<br>
+
+		現在（秒）：<span id="ichi"></span><br>
+		全体（秒）：<span id="nagasa"></span><br>
+		<span id="kanryou">...</span>
+		<script type="text/javascript" src="./index_usermovie.js"></script>
+		
+		</div>
+	</main>
+
+
+
+
+</div>
+</body> 
+</html>

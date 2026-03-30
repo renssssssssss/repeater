@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Make Chapter</title>
+<meta name="description" content="YoutubeRepeaterの詳細を説明するためのページです。">
+
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="style_makeChapter.css">
+<!--
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>-->
+</head>
+<body>
+    <header class="top"><h1>Make Chapter</h1>
+		関連ページ:<a href="index.html">Youtube Repeater</a> <a href="movieRepeater.html">Movie Repeater</a>
+		 <a href="help_makechapter.html">このページについて（作成予定）</a>
+	</header>
+    <div id="layout">
+        提出されたテキストまたはテキストファイルをYoutube RepeaterとMovie Repeaterで使用可能なチャプター(csvファイル)に変換するページを作成予定です。
+        <br>
+        <textarea rows="7" id="row_text" placeholder="時間 タイトル(改行)
+                                                      時間 タイトル(改行)
+                                                      ............
+                                                      時間 タイトル"></textarea>
+        <button id="submit_rowtext" onClick="submitRowtext()">submit</button>
+        <input type="file" id="textfile" placeholder="ここに.txtファイルを提出してください。">
+        <button id="submit_textfile">submit</button>
+        <br>
+        時間を右、タイトルを左で入力する場合下をクリックしてください。
+        <button onClick="toggleTimeTitle()">toggle</button>
+        <br>
+
+    </div>
+    <script type="text/javascript" src="makeChapter.js"></script>
+</body> 
+</html>
