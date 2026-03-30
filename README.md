@@ -1,2 +1,2 @@
 youtuberepeaterのアルゴリズム自作版です
-https://renssssssssss.github.io/20260326/
+https://renssssssssss.github.io/repeater/
